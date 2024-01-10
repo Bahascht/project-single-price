@@ -1,0 +1,132 @@
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla";
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: var(--Light-Gray);
+  color: var(--Grayish-Blue);
+  width: 100%;
+}
+
+.container {
+  width: 600px;
+  margin: auto;
+  margin-top: 6rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.top {
+  background-color: white;
+  padding: 2rem;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+
+.top h1 {
+  color: var(--Cyan);
+  padding-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.text-green {
+  color: var(--Bright-Yellow);
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+.text-grey {
+  line-height: 1.25rem;
+}
+
+.bottom {
+  display: flex;
+
+  color: white;
+}
+
+.left {
+  background-color: hsl(179, 59%, 36%);
+  width: 50%;
+  padding: 1.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.right {
+  background-color: var(--Cyan);
+  width: 50%;
+  padding: 1.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+h2 {
+  font-size: 1rem;
+  padding-bottom: 1.25rem;
+}
+
+.dollar {
+  font-size: 1.5rem;
+}
+
+.money {
+  font-size: 1rem;
+  color: var(--Light-Gray);
+  font-weight: 400;
+}
+
+.text {
+  padding: 0.5rem 0 2rem;
+  font-weight: 400;
+}
+
+button {
+  background-color: var(--Bright-Yellow);
+  color: white;
+  border: none;
+  font-weight: 700;
+  padding: 0.75rem 0;
+  width: 100%;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.right p {
+  font-weight: 400;
+  line-height: 1.5rem;
+  width: 85%;
+}
+
+@media only screen and (max-width: 500px) and (min-width: 300px) {
+  .container {
+    margin: 6rem auto;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+  }
+  .left {
+    width: 300px;
+    border-bottom-left-radius: 0;
+  }
+
+  .right {
+    width: 300px;
+
+    border-bottom-left-radius: 0.5rem;
+  }
+}
